@@ -13,13 +13,21 @@
     <tbody>
     {{#models}} 
       <tr>
-        <td>{{id}}</td> 
+        <td>
+          <a href="/boards/{{id}}" style="color: inherit; text-decoration: none;">
+            {{id}}
+          </a>
+        </td> 
         <td>
           <a href="/boards/{{id}}" style="color: inherit; text-decoration: none;">
             {{title}}
           </a>
         </td>
-        <td>{{content}}</td>
+        <td>
+          <a href="/boards/{{id}}" style="color: inherit; text-decoration: none;">
+            {{content}}
+          </a>
+        </td>
       </tr>
       {{/models}}
     </tbody>
