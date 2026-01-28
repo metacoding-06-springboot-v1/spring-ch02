@@ -26,9 +26,11 @@ public class User {
 
     // 객체 생성을 위한 생성자
     @Builder
-    public User(String username, String password, String email) {
+    public User(Integer id, String username, String password, String email, Timestamp createdAt) {
+        this.id = id;
         this.username = username;
         this.password = password;
         this.email = email;
+        this.createdAt = createdAt;
     }
 }
